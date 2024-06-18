@@ -30,33 +30,32 @@ class _BookingListScreenState extends State<BookingListScreen> {
   }
 
   void cancelBooking(int index) {
-    setState(() {
-      showDialog(
-        context: context,
-        builder: (context) => AlertDialog(
-          title: Text('예매 취소하기'),
-          content: Text(
-              '정말 취소하시겠습니까? 총 환불 금액은 ${bookings[index].selectedAudienceCount * 12000}원입니다.'),
-          actions: [
-            TextButton(
-              onPressed: () {
-                Navigator.of(context).pop();
-              },
-              child: Text('취소'),
-            ),
-            TextButton(
-              onPressed: () {
-                setState(() {
-                  bookings.removeAt(index);
-                });
-                Navigator.of(context).pop();
-              },
-              child: Text('확인'),
-            ),
-          ],
-        ),
-      );
-    });
+    showDialog(
+      context: context,
+      builder: (context) => AlertDialog(
+        title: Text('예매 취소하기'),
+        content: Text(
+            '정말 취소하시겠습니까? 총 환불 금액은 ${bookings[index].selectedAudienceCount * 12000}원입니다.'),
+        actions: [
+          TextButton(
+            onPressed: () {
+              Navigator.of(context).pop();
+            },
+            child: Text('취소'),
+          ),
+          TextButton(
+            onPressed: () {
+              setState(() {
+                bookings.removeAt(index);
+                seatBooked.clear(); // 선택된 좌석 초기화
+              });
+              Navigator.of(context).pop();
+            },
+            child: Text('확인'),
+          ),
+        ],
+      ),
+    );
   }
 
   @override

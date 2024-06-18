@@ -5,7 +5,6 @@ import 'payment.dart';
 import 'booking.dart';
 
 List<Booking> bookings = [];
-List<int> selectedSeats = [];
 
 class MyApp extends StatelessWidget {
   @override
