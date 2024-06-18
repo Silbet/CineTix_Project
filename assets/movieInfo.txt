@@ -1,0 +1,38 @@
+[
+  {
+    "id" : "1",
+    "title": "OOAD",
+    "cast": ["김준범", "김태우", "정지연"],
+    "director": "최은미 교수님",
+    "audienceRating": 120,
+    "ageRestriction": 19,
+    "imageUrl": "assets/images/tmp.jpg"
+  },
+  {
+    "id" : "2",
+    "title": "범죄도시4",
+    "cast": ["마동석", "김무열"],
+    "director": "허명행",
+    "audienceRating": 100,
+    "ageRestriction": 15,
+    "imageUrl": "assets/images/crimecity4.jpg"
+  },
+  {
+    "id" : "3",
+    "title": "인사이드 아웃2",
+    "cast": ["기쁨이", "슬픔이", "불안이"],
+    "director": "켈시 만",
+    "audienceRating": 90,
+    "ageRestriction": 12,
+    "imageUrl": "assets/images/insideout2.jpg"
+  },
+  {
+    "id" : "4",
+    "title": "퓨리오사",
+    "cast": ["엔야 타일러", "크리스 햄스워스"],
+    "director": "조지 밀러",
+    "audienceRating": 80,
+    "ageRestriction": 12,
+    "imageUrl": "assets/images/madmax.jpg"
+  }
+]
